@@ -1,0 +1,1366 @@
+/*
+*
+* Credits to Jeri Ingalls for the Font
+* ingalls@kalama.com
+* http://www.geocities.com/Heartland/Shores/7173
+*
+*/
+
+@font-face {
+	font-family: 'JIMargarita';
+	src:
+		url('../fonts/JIMargarita.ttf') 
+		format('truetype');
+}
+
+/*
+*	Breakpoints:
+* 1300px, desktop,
+* 1250px to accomodate space
+* 1024px, tablet and small desktop,
+* 768px, tablet and Iphones
+* max width 767px for Smartphones
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: -ms-flexbox;
+	display: flex;
+	width: 100vw;
+	min-height: 100vh;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	background-color: #FFFDD1;
+}
+
+::-moz-selection {
+    color: white;
+    background: #6E0DD0;
+}
+
+::selection {
+    color: white;
+    background: #6E0DD0;
+}
+
+/*FLEX CONTAINER FOR HEADER*/
+header {
+	height:160px;
+	background-color: #BDFFF9;
+	display: -ms-flexbox;
+	display: flex; 
+}
+
+#logo {
+	margin: 0px 2em 0px 3em;
+	width: 63px;
+}
+
+header img {
+	height: 10em;
+}
+
+/*FLEX ITEM & CONTAINER FOR HEADER TITLE */
+#pageTitle {
+	height: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
+	-ms-flex: 1 0 750px;
+	    flex: 1 0 750px; 
+}
+
+#pageTitle h1, 
+#pageTitle h2 {
+  margin: 0;
+}
+
+#pageTitle h1 {
+	font-size: 2.3em;
+	line-height: 40px;
+}
+
+#pageTitle h2 {
+	font-size: 1.7em;
+	line-height: 52px;
+}
+
+/*FLEX ITEM & CONTAINER FOR SOCIAL LINKS*/
+header .social {
+	list-style-type:none;
+	margin: 0 150px 0 0;
+	padding: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	    flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	-ms-flex: 0 0 120px;
+	    flex: 0 0 120px;
+}
+
+.social li {
+	-ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	/*padding: 1em;*/
+	font-size: 1.5em;
+}
+
+.social li a {
+	color: black;
+}
+
+.social li a:hover {
+	background-color: #FFFDD1;
+}
+
+#header-time {
+	font-size: 0.9em;
+	margin-top: 1em;
+	-ms-flex: 100%;
+	    flex: 100%;
+}
+
+/*END OF HEADER*/
+
+/*CONTAINER FOR ALL CONTENT:
+BACK BUTTON, FLEX-NAV, MAIN CONTENT, AND SITE ADS*/
+
+.flex-content {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-top: 3em;
+	margin-bottom: 55px;
+}
+
+/*HOME PAGE TITLE, PLACED INSIDE A BUTTON*/
+
+#reservation-button {
+  background-color: #6E0DD0;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 1.9em;
+  padding: 0.5em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0.8em 1em;
+}
+
+#reservation-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#reservation-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#reservation-button:hover span {
+  padding-right: 25px;
+}
+
+#reservation-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#visit-menu-button {
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+
+#visit-menu-button a {
+	font-size: 1.5em;
+}
+
+/*THIS IS TO WRAP THE FOOD MENU PAGE, IT HAS NO ADS, JUST A BACK BAR AND CONTENT*/
+
+#food-menu {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+/* The "BACK" button, on the Menu page and Our Partners Page */
+
+#back-button {
+	-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	-ms-flex-order: 0;
+	    order: 0;
+}
+
+#back-button-2 {
+	-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	-ms-flex-order: 5;
+	    order: 5;
+}
+
+.button {
+    background-color: #BDFFF9; 
+    border: 2px solid black;
+    border-radius: 4px;
+    color: black;
+    padding: 0.4em 1em;
+    margin: 1em 0 0 5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*VERTICAL SITE NAVIGATION*/
+
+.toggleNav {
+	display: none;
+}
+
+.flex-nav {
+	-ms-flex: 0 0 22em;
+	    flex: 0 0 22em; 
+	display: -ms-flexbox; 
+	display: flex;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
+}
+
+.flex-nav ul {
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+   	min-height: 66vh;
+    background-color: #BDFFF9;
+    border: 2px solid black;
+    display: -ms-flexbox;
+    display: flex; 
+  	-ms-flex-direction: column; 
+  	    flex-direction: column;
+  	-ms-flex-pack: distribute;
+  	    justify-content: space-around;
+  	-ms-flex-item-align: start;
+  	    align-self: flex-start;
+  	-ms-flex: 0 0 270px;
+  	    flex: 0 0 270px;
+}
+
+.flex-nav ul .social {
+	display: none;
+}
+
+.flex-nav li {
+	-ms-flex: 0 1;
+	    flex: 0 1;
+	text-align: center;
+	font-size: 1.5em;
+}    
+
+.flex-nav li a {
+	display:inline-block;
+	text-decoration:none;
+	padding: 0px;
+	color: black;
+}
+
+.flex-nav li a:hover {
+    background-color: #FFFDD1;
+}
+
+/*END OF VERTICAL NAVIGATION*/
+
+/*GRABDAT FOOD MENU*/
+
+/*Container*/
+.menu-content {
+	padding-left: 4em;
+	margin: 0 5em;
+	-ms-flex: 1 0 800px;
+	    flex: 1 0 800px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	text-align: left;
+	-ms-flex-order: 0;
+	    order: 0;
+}
+
+.menu-content figure {
+	margin: 0;
+}
+
+.menu-content figure > img {
+	display: block;
+	margin: 15px auto 0;
+	width: 200px;
+	height: auto;
+}
+
+#menuTitle {
+	text-align: center;
+	font-size: 4em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: 'JIMargarita', serif;
+}
+
+.menuItem {
+	margin-top: 3em;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+.menuItem h3 {
+	margin-left: 50px;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: 'JIMargarita', serif;
+}
+
+.itemPhoto {
+	padding-left: 100px;
+}
+
+
+.itemDescription {
+	display: -ms-flexbox;
+	display: flex;
+	font-weight: 100;
+	font-family: cursive;
+	font-size: 1.2em;
+	margin: 1em 0;
+}
+
+.itemDescription p {
+	-ms-flex-pack: start;
+	    justify-content: flex-start;
+	-ms-flex: 1 0 60%;
+	    flex: 1 0 60%;
+	margin: 0;
+}
+
+.itemDescription .price {
+	text-align: center;
+	-ms-flex: 1;
+	    flex: 1;
+	margin: 0;
+}
+
+.itemDescription li {
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	list-style-type: none;
+	-ms-flex: 0 1 160px;
+	    flex: 0 1 160px;
+	text-align: right;
+}
+
+/*END OF FOOD MENU ITEMS*/
+
+/* FONT HANDLING */
+
+h1,
+h2,
+h3,
+.flex-nav li,
+#reservation-button,
+.button, 
+figcaption,
+.signup,
+input,
+textarea,  
+a,
+p,
+li,
+sup,
+.vcard,
+.error,
+#receipt {
+	font-family: 'Gloria Hallelujah', Comic Sans MS;
+}
+
+/*ALL SITE'S PAGE'S MAIN CONTENT*/
+ 
+.row-main-content h2  {
+	font-size: 2em;
+	margin: 0 0 0.5em; 
+	-ms-flex-preferred-size: 100%; 
+	    flex-basis: 100%;
+}
+
+.row-main-content h3 {
+	font-size: 1.2em;
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	margin-top: 0;
+}
+
+/*FLEX DIRECTION ROW FOR ALL PAGES BECAUSE COLUMN DOESNT WORK IN SAFARI*/
+
+.row-main-content {
+	-ms-flex: 1 0 700px;
+	    flex: 1 0 700px;
+	padding: 0 2em;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+
+/* STYLE FOR PAGE: WHO WE ARE*/
+
+#company-description {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 0 0 80%;
+	    flex: 0 0 80%;
+	-ms-flex-direction: row;
+	    flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	padding: 2em;
+	-ms-flex-order: 2;
+	    order: 2;
+}
+
+#company-description div {
+	background:rgba(189,255,249,0.9);
+	border-radius: 4px;
+	border: 2px solid black;
+	padding: 0.8em 1.2em;
+}
+
+#company-photo {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 0 0 calc(40% - 2em);
+	    flex: 0 0 calc(40% - 2em);
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}
+
+#company-photo a {
+	display:inline-block;
+	text-decoration:none;
+	padding: 0px;
+	color: black;
+}
+
+#company-photo img {
+	width: 400px;
+	height: auto;
+}
+
+/* WHAT WE DO PAGE*/
+#services-menu {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+}
+
+#ourServicesList {
+	list-style-type: none;
+	margin: 10px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	margin: 0;
+	padding: 0;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+
+#ourServicesList li {
+	padding: 0.5em;
+	background-color: #BDFFF9; 
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0.5em;
+    font-size: 1.2em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+#ourServicesList li:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#ourServicesList li a {
+	display:inline-block;
+	text-decoration:none;
+	padding: 0px;
+	color: black;
+}
+
+/*END OF WHAT WE DO, WHO WE ARE PAGES*/
+
+/*MAIN CONTENT STYLING*/
+
+.row-main-content a:link, 
+.row-main-content a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6E0DD0;
+}
+
+.tacophoto {
+	width: 412px;
+	height: 309px;
+}
+
+figcaption {
+	font-size: 0.9em;
+	padding-top: 0.2em;
+	text-align: center;
+}
+
+/*CONTACT US PAGE*/
+
+.vcard {
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+}
+
+/*FOR THE FORM ON CUSTOMER FEEDBACK*/
+
+.signup {
+  background:rgba(189,255,249,0.8);
+  padding:20px;
+  margin: 0;
+  color: black;
+  font-weight: 100;
+  border: 3px solid white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.signup .error {
+	color: #6E0DD0;
+	-ms-flex: 1;
+	    flex: 1;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+input {
+  padding:10px;
+  margin: 5px 0 10px;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  -ms-flex: 0 0 55%;
+      flex: 0 0 55%;
+  font-size: 0.85em;
+}
+
+span input {
+	-ms-flex-preferred-size: 48%;
+	    flex-basis: 48%;
+}
+
+input[type=submit] {
+	-ms-flex: 0 0 50%;
+	    flex: 0 0 50%;
+	-webkit-appearance: none;
+}
+
+#submit-center {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	margin-top: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 0 0 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 0.8em;
+    resize: none;
+}
+
+/* END OF CUSTOMER FEEDBACK FORM */
+/* FOR PAGE:" MAKE A RESERVATION */
+
+
+#makeReservationForm p {
+	margin: 0;
+}
+
+#makeReservationForm > span {
+	-ms-flex: 100%;
+	    flex: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 0.4em;
+}
+
+#makeReservationForm > span > span:first-child {
+	-ms-flex-preferred-size: 25%;
+	    flex-basis: 25%;
+	margin-right: 1em;
+}
+
+.styled-select {
+   border-radius: 5px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select.slate {
+   background-color: white;
+   height: 34px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+input[name="resDate"] {
+	-ms-flex-preferred-size: 45%;
+	    flex-basis: 45%;
+	border: 2px solid pink;
+}
+
+/* End of MAKE A RESERVATION PAGE */
+
+/*Reservation Confirmation Page*/
+
+#receipt {
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #F3ECE2;
+	padding: 1em;
+}
+
+#receipt th {
+	text-align: center;
+	text-decoration: underline;
+}
+
+/*	Advertisement Display */
+
+.advertisement {
+	-ms-flex: 1 0 200px;
+	    flex: 1 0 200px;
+}
+
+.advertisement #desktopAds {
+	/*margin-right: 150px;*/
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex: 0 0 200px;
+	    flex: 0 0 200px;
+	-ms-flex-line-pack: start;
+	    align-content: flex-start;
+}
+
+.advertisement #tabletBanner, 
+.advertisement #tabletBannerMedium {
+	display: none;
+}
+
+footer {
+	padding: 5px 60px;
+	position: relative;
+  	bottom: 0;
+  	left: calc(50% - 11.5em);
+  	background-color: #BDFFF9;
+  	text-align: center;
+  	width: -webkit-fit-content;
+  	width: -moz-fit-content;
+  	width: fit-content;
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+footer p {
+	margin-bottom: 0px;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+
+@media all and (max-width: 1251px) {
+
+	/*THE PAGE HEADER ALWAYS SITS ABOVE THE FLEX-CONTENT*/
+
+	.flex-content {
+		margin-top: 10px;
+		-ms-flex-pack: center;
+		    justify-content: center;
+	}
+
+	/*MOVES THE MENU TO THE TOP OF THE PAGE, UNDER THE HEADER, AND CENTERS IT.
+	ORDER OF PAGE: ADS 1, FLEX NAV 2, MAIN CONTENT 3 */
+	.flex-nav {
+		-ms-flex: 1 0 100%;
+		    flex: 1 0 100%; 
+		-ms-flex-pack: center; 
+		    justify-content: center;
+		-ms-flex-order: 2;
+		    order: 2;
+	}
+
+	/* 
+	Align content to start of flex nav because there are 5 items 
+	until we reach tablet and smaller */
+	.flex-nav ul {
+	   	min-height: 0vw;
+	  	-ms-flex-direction: row;
+	  	    flex-direction: row;
+	  	-ms-flex-wrap: wrap;
+	  	    flex-wrap: wrap;
+	  	-ms-flex-pack: start;
+	  	    justify-content: flex-start;
+	  	-ms-flex: 0 0 55%;
+	  	    flex: 0 0 55%;
+	}
+
+	/*SPLIT THE MENU SO THAT THERE ARE 2 LIST ITEMS ON EACH ROW*/	
+	.flex-nav li {
+		-ms-flex: 1 1 50%;
+		    flex: 1 1 50%;
+		font-size: 1.2em;
+	}    
+
+	/*TIME TO DO SOME MANUAL REORDERING*/
+	.flex-nav li:nth-child(1) {
+		-ms-flex-order: 1;
+		    order: 1;
+		padding-left: 50px;
+	}
+
+	.flex-nav li:nth-child(2) {
+		-ms-flex-order: 2;
+		    order: 2;
+		padding-right: 50px;
+	}
+
+	.flex-nav li:nth-child(3) {
+		-ms-flex-order: 4;
+		    order: 4;
+		padding-right: 50px;
+	}
+
+	.flex-nav li:nth-child(4) {
+		-ms-flex-order: 5;
+		    order: 5;
+		padding-left: 50px;
+		-ms-flex: 0 0 50%;
+		    flex: 0 0 50%;
+	}
+
+	.flex-nav li:nth-child(5) {
+		-ms-flex-order: 3;
+		    order: 3;
+		padding-left: 50px;
+	}
+
+	.flex-nav li:nth-child(6) {
+		-ms-flex-order: 6;
+		    order: 6;
+		padding-right: 50px;
+	}
+
+	/* End of Flex Nav */
+
+
+	/* NOT TO BE CONFUSED WITH FLEX-CONTENT, WHICH IS THE WRAPPER OF THE NAV, MAIN, AND ADS*/
+
+	.row-main-content {
+		-ms-flex: 0 1 80%;
+		    flex: 0 1 80%;
+		padding: 10px 70px;
+		-ms-flex-order: 3;
+		    order: 3;
+		margin: 0;
+	}
+
+	#reservation-button {
+		font-size: 1.5em;
+	}
+
+	.signup {
+	  margin: 0;
+	  -ms-flex: 1;
+	      flex: 1;
+	}
+
+	textarea {
+	    width: 100%;
+	    height: 150px;
+	    padding: 12px 20px;
+	    border: 3px solid white;
+	    border-radius: 5px;
+	    background-color: white;
+	    font-size: 16px;
+	    resize: none;
+	}
+	/*	END OF MAIN CONTENT */
+
+	#services-menu {
+		margin-bottom: 1em;
+	}
+
+	/*	CHANGING THE ADVERTISEMENTS TO A SINGLE BANNER */
+	.advertisement {
+		margin-right: 0;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex: 0 0 100%;
+		    flex: 0 0 100%;
+		-ms-flex-order: 0;
+		    order: 0;
+	}
+
+	/*Hiding vertically stacked desktop ads*/
+	.advertisement #desktopAds {
+		display: none;
+	}
+
+	.advertisement #tabletBanner {
+		display: block;
+	}
+
+	.advertisement #tabletBanner img {
+		display: block;
+		margin: 0 auto 10px;
+	}
+
+	/* Restyle the Menu */
+
+	#back-button {
+		-ms-flex-order: 1;
+		    order: 1;
+	}
+
+	.menu-content {
+		-ms-flex-order: 2;
+		    order: 2;
+	}
+
+
+}
+
+@media all and (max-width: 1023px) {
+	
+	.wrapper {
+		min-width: 768px;
+	}
+
+	/* creating a class to add on to things that are to disappear at this width*/
+	.tablet-hide {
+		display: none;
+	}
+	
+	/* Hide the social media links from header and add them to the drop down flex nav */
+	header .social {
+		display: none;
+	}
+
+	/* DISPLAY SOCIAL MEDIA link at the end of flex nav in SLOT 6*/
+	.flex-nav ul .social {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: center;
+		    justify-content: center;
+		-ms-flex: 1 1 50%;
+		    flex: 1 1 50%;
+		-ms-flex-order: 6;
+		    order: 6;	
+	}
+
+	.flex-nav ul .social ul {
+		border: none;
+	}
+
+
+	/* Reduce Header title size */
+		#pageTitle {
+		-ms-flex: 1 1 750px;
+		    flex: 1 1 750px; 
+	}
+	/* Smaller nav font size */
+
+	.flex-nav li, 
+	.social li  {
+		font-size: 1.3em;
+	}
+
+	/* Begin Hiding the Menu with a dropdown Menu on Toggle */
+
+	.toggleNav {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex: 1 1 90vw;
+		    flex: 1 1 90vw;
+		-ms-flex-pack: center;
+		    justify-content: center;
+		text-decoration: none;
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 1.4em;
+		color: black;
+	}
+
+	/* BODY: Reset the Flex Nav layout */
+
+	.flex-nav {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+	/* Hide flex-nav Vertical List */
+
+	.flex-nav ul {
+		display: none;
+	}
+
+	/* toggles on click */
+
+	.flex-nav ul.open {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex:0 0 75%;
+		    flex:0 0 75%;
+	}
+
+	/* Add an Icon for toggling Site's drop down Nav */
+
+	.menuIcon {
+	    display: inline-block;
+	    cursor: pointer;
+	}
+
+	.bar1, 
+	.bar2, 
+	.bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+
+	.change .bar1 {
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+	    transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	/*	FOR PAGE CONTENT */
+
+	/*HOME PAGE TITLE*/
+
+	.row-main-content {
+		padding: 0em 2em;
+	}
+
+	/*FIGURE OUT WHERE THE NO WRAP IS TAGGED*/
+
+	.no-wrap {
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+	}
+
+	#company-description {
+	-ms-flex: 0 1 650px;
+	    flex: 0 1 650px;
+	}
+
+	#services-menu {
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		-ms-flex: 0 0 100%;
+		    flex: 0 0 100%;
+	}
+
+	#services-menu h2 {
+		-ms-flex: 0 0 100%;
+		    flex: 0 0 100%;
+		font-size: 1.5em;
+	}
+
+	#ourServicesList {
+		list-style-type: none;
+		margin: 10px;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		margin: 0;
+		padding: 0;
+	}
+
+	#ourServicesList li {
+		padding: 0.7em;
+	    font-size: 1.2em;
+	}
+
+	#company-photo h2 {
+		margin-top: 1em;
+	}
+
+	/* Edit the margin on the Back Button */
+	.button {
+		margin: 1em 0 0 1em;
+	}
+}
+
+@media all and (max-width: 900px) {
+
+	/*Changing the banner img to 768px */
+
+	.advertisement #tabletBanner {
+		display: none;
+	}
+ 
+	.advertisement #tabletBannerMedium {
+		display: block;
+	}
+
+	#tabletBannerMedium img {
+		display: block;
+		margin: 0 auto 10px;
+	}
+
+	.menu-content {
+		margin: 0 6em 0 2em;
+	}
+
+	/* Form Error repositioning */
+
+	#makeReservationForm > span {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+	.signup .error {
+		-ms-flex-preferred-size: 100%;
+		    flex-basis: 100%;
+		text-align: center;
+	}
+}
+
+/*Apply this only to device width. Do not allow the desktop view to shrink below 700 px
+At 900 px, change the bannder ad down to 767 px, then again below 767px*/
+
+@media only screen
+  and (max-device-width: 768px){
+/*  	@media all and (max-width: 768px)*/
+
+	/* Bring page width to the current devices screen size*/
+	.wrapper {
+		min-width: 100vw;
+	}
+
+	/*HIDE THE BANNER ADS*/
+	#tabletBannerMedium img {
+		display: none;
+	}
+
+	/*CHANGE UP NAVIGATION FOR MOBILE*/
+
+	/*The 4th child is specified because there were only 5 items inside
+	the nav when screen >= 1024px */
+	.flex-nav ul .social,
+	.flex-nav li,
+	.flex-nav li:nth-child(4) {
+		-ms-flex: 1 1 100%;
+		    flex: 1 1 100%;
+	}
+
+	.flex-nav li:nth-child(1) {
+		padding-left: 0px;
+	}
+
+	.flex-nav li:nth-child(2) {
+		padding-right: 0px;
+	}
+
+	.flex-nav li:nth-child(3) {
+		padding-right: 0px;
+		-ms-flex-order: 3;
+		    order: 3;
+	}
+
+	.flex-nav li:nth-child(4) {
+		padding-left: 0px;
+		-ms-flex-order: 4;
+		    order: 4;
+	}
+
+	.flex-nav li:nth-child(5) {
+		padding-left: 0px;
+		-ms-flex-order: 5;
+		    order: 5;
+	}
+
+	.flex-nav li:nth-child(6) {
+		padding-right: 0px;
+	}
+
+	.flex-nav ul .social ul li {
+		-ms-flex: 50%;
+		    flex: 50%;
+	}
+
+	/*FONT RESIZING*/
+
+	/* Page Header */
+
+	#logo {
+		margin: 0px 1.5em 0px 0.5em;
+	}
+
+	#pageTitle h1 {
+		font-size: 1.6em;
+	}
+
+	#pageTitle h2 {
+		font-size: 1.1em;
+	}
+
+	.row-main-content h3 {
+		padding: 0 1em;
+		margin: 0;
+	}
+
+	/* Make Reservation button AND Visit Menu Button */
+	#reservation-button {
+		font-size: 1.2em;
+	}
+
+	#visit-menu-button a {
+		font-size: 1.1em;
+	}
+
+	#makeReservationForm > span > span:first-child {
+		font-size: 0.8em;
+	}
+
+	/* Food Menu, which also wraps the our Partners and Make Reservations Results Page */
+
+	.menu-content {
+		-ms-flex: 1;
+		    flex: 1;
+		padding-left: 1em;
+		margin: 0;
+	}
+
+	#menuTitle {
+		margin-bottom: 0;
+	}
+
+	.menuItem h3 {
+		margin-left: 0;
+		font-size: 1.5em;
+	}
+
+	.itemPhoto {
+		padding-left: 0;
+		width: 200px;
+		height: 134px;
+	}
+
+	.itemDescription {
+		font-size: 1em;
+	}
+
+	.itemDescription p {
+		-ms-flex: 1 0 72%;
+		    flex: 1 0 72%;
+	}
+
+	.itemDescription p sup {
+		font-size: 0.5em;
+	}
+
+	.itemDescription li {
+		-ms-flex: 0;
+		    flex: 0;
+	}
+
+	#menuExtras {
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		-ms-flex-align: center;
+		    align-items: center;
+		margin-top: 0;
+	}
+
+	figcaption {
+		font-size: 0.75em;
+	}
+
+	/* Page content and title resize */
+
+	.row-main-content {
+		padding: 0;
+		-ms-flex-preferred-size: 90%;
+		    flex-basis: 90%;
+	}
+
+	.row-main-content h2 {
+		font-size: 1.2em;
+	}
+
+	/* Main image resizing */
+
+	.tacophoto {
+		width: 320px;
+		height: 214px;
+		padding: 0 0.75em;
+	}
+
+	#company-photo img {
+		width: 320px;
+		height: 240px;
+	}
+
+	iframe {
+		width: 90vw;
+		height: auto;
+	}
+
+	/* Hiding the text designated for desktop and tablet */
+
+	.mobile-hide {
+		display: none;
+	}
+
+	/* Rearranging the What We Do page */
+
+	#ourServicesList {
+		-ms-flex-direction: column;
+		    flex-direction: column;
+	}
+
+	#ourServicesList li {
+		padding: 0.2em;
+		font-size: 1.1em;
+	}
+
+	#ourServicesList li:hover {
+    	box-shadow: 0 0.5em 0.7em 0 rgba(0,0,0,0.24), 0 0.75em 3em 0 rgba(0,0,0,0.19);
+	}
+
+	/* Making the Forms mobile friendly */
+
+	.signup {
+		margin: 0;
+		-ms-flex-preferred-size: 100%;
+		    flex-basis: 100%;
+	}
+
+	input {
+		-ms-flex: 1;
+		    flex: 1;
+		-ms-flex-preferred-size: 90%;
+		    flex-basis: 90%;
+	}
+
+	/* Make a Reservation Form */
+
+	.hide-border-on-mobile {
+		padding: 0;
+		border: none;
+		/* Fixing the margin here to compensate for the area that was just collapsed */
+		margin: 1.5em 0;
+	}
+
+	.styled-select.slate select {
+	   width: 100%;
+	}
+}

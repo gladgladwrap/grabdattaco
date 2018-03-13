@@ -1,0 +1,28 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.grabdattaco\.com [NC]
+RewriteRule ^(.*)$ http://grabdattaco.com/$1 [R=301,L]
+
+# Redirect external .php requests to extensionless url
+RewriteCond %{THE_REQUEST} ^(.+)\.php([#?][^\ ]*)?\ HTTP/
+RewriteRule ^(.+)\.php$ http://grabdattaco.com/$1 [R=301,L]
+
+# Resolve .php file for extensionless php urls
+RewriteRule ^([^/.]+)$ $1.php [L]
+
+# 404 redirect
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ http://grabdattaco.com/404.php [R=301,L]
+
+# Unless directory, remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+#Redirect Index to Homepage
+RewriteRule ^/?index\.php$ http://grabdattaco.com [R=301]
+
+
+# Add a Header to look like a gangster
+Header add X-How-do-I-get-tacos "Grabdat Taco."

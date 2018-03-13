@@ -1,0 +1,45 @@
+body {
+	height: 100vh;
+	background-image: url('/images/AbstractTacoJoe.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 550px;
+}
+
+h1, h2, p, a {
+	text-align: left;
+	font-family: 'Gloria Hallelujah', Comic Sans MS;
+}
+
+p {
+	margin: 2em 0;
+	font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: #79E27B;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+a:hover {
+  color: #79E27B;
+  cursor: pointer;
+}
+
+@media only screen
+  and (max-device-width: 768px){
+
+	body {
+		background-position: bottom;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
+		margin-bottom: 0;
+	}
+}

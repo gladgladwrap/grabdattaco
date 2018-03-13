@@ -1,0 +1,56 @@
+/* This is a common technique called a CSS reset. Different browsers use different 
+default margins, causing sites to look different by margins. The * means "all elements" 
+(a universal selector) */
+
+/* {
+	webkit-background-sizing: border-box;
+	moz-background-sizing: border-box;
+	ms-background-sizing: border-box;
+	background-sizing: border-box;
+}*/
+
+h1 {
+	text-align: center;
+	padding: 50px;
+	border-style: solid none;
+}
+
+
+
+a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 2.4vh;
+	margin: 100px 30px 0px;
+
+}
+
+a, p, h1, h2 {
+	color: black;
+	font-family: "Georgia", Serif;
+	clear: both; /* Clear all items so that they do not overlap with the background image, 
+	which is not even set as a background image, on resizing the page.*/
+}
+
+/* Tip: Downsizing a large image with the height and width attributes forces a user to 
+download the large image (even if it looks small on the page). To avoid this, rescale 
+the image with a program before using it on a page.*/
+
+/*floating an element allows text to be placed next to the floated element.
+		The clear property specifies on which sides of an element floating elements
+		 are not allowed to float.*/
+
+.body1 { 
+	min-height: 70vh;
+	background-image: url(images/IMG_0297.jpg);
+	margin-top: 1%;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+	background-position: 0% 50%;
+    background-size: contain; /*contain allows the image to keep its aspect ratio.
+    To scale the whole background to the photo but sacrifice portions of the photo, 
+    in most scenarios: background-size: cover; */
+    /* I don't want any text overlapping the image when the browser is resized.*/ 
+
+}
+
