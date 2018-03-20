@@ -14,40 +14,40 @@ $(function() {
 
 });
 
-$(function() {
+// $(function() {
 
-		if (sessionStorage.getItem("displayMan")=='1') {
+// 		if (sessionStorage.getItem("displayMan")=='1') {
 
-			$('#logo_img').css({display:'none'});
+// 			$('#logo_img').css({display:'none'});
 
-			$('#hideCreepyManBtn').html('Bring Back The Creepy Man!');
+// 			$('#hideCreepyManBtn').html('Bring Back The Creepy Man!');
 
-			$('#hideCreepyManBtn').on('click', function() {
+// 			$('#hideCreepyManBtn').on('click', function() {
 
-				$('#logo_img').css({display:'inline'});
+// 				$('#logo_img').css({display:'inline'});
 
-				sessionStorage.setItem("displayMan", 0);
+// 				sessionStorage.setItem("displayMan", 0);
 
-			});
+// 			});
 
-		}
+// 		}
 
-		else {
+// 		else {
 
-			$('#hideCreepyManBtn').on('click', function() {
+// 			$('#hideCreepyManBtn').on('click', function() {
 
-				$('#logo_img').toggle(1000);
+// 				$('#logo_img').toggle(1000);
 
-				$('#hideCreepyManBtn').html('Goodbye For Now');
+// 				$('#hideCreepyManBtn').html('Goodbye For Now');
 
-				$('#hideCreepyManBtn').fadeOut(4000);
+// 				$('#hideCreepyManBtn').fadeOut(4000);
 
-				sessionStorage.setItem("displayMan", 1);
+// 				sessionStorage.setItem("displayMan", 1);
 
-			});
-		}
+// 			});
+// 		}
 
-});
+// });
 
 
 
