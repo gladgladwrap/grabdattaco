@@ -22,9 +22,11 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 
-	<meta name="description" content="Grabdat Taco is a taco catering company for community events and private company functions. We provide Mexican food, Mexican-style liqueurs, and Latino Music for parties!" />
+	<meta name="description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!" />
+
+	<meta itemprop="image" content="images/metaphoto.png">
 
 	<meta name="author" content="Dylan Cooper" />
 
-	<meta name="keywords" content="GrabdatTaco, grabdat taco, Grabdat Taco in Halifax, grabdat taco halifax, Halifax Tacos, Tacos in Halifax, Taco Bar, Taco Bar Halifax, Catering, Catering in Halifax, Mexican Catering, Mexican Food, Mexican Party, Mexico in Halifax, Taqueria, Tacos, Taco, Tacoparty, Taco Party, Taco Party in Halifax, Food in Halifax, Restaurants in Halifax, Tortilla, Queso, Quesadilla, Nachos, Nachos in Halifax, Party Services, Mexican Party, Salsa Music, Catering and Music companies, Mexican Catering Company, Taco Catering Company, Tequila" />';
+	<meta name="keywords" content="GrabdatTaco, grabdat taco, Grabdat Taco in Halifax, grab dat taco halifax, Halifax Tacos, Tacos in Halifax, Taco Bar, Taco Bar Halifax, Catering, Catering in Halifax, Mexican Catering, Mexican Food, Mexican Party, Mexico in Halifax, Taqueria, Tacos, Taco, Tacoparty, Taco Party, Taco Party in Halifax, Food in Halifax, Restaurants in Halifax, Tortilla, Queso, Quesadilla, Nachos, Nachos in Halifax, Party Services, Mexican Party, Salsa Music, Catering and Music companies, Mexican Catering Company, Taco Catering Company, Tequila" />';
 ?>
