@@ -155,7 +155,7 @@ Company: Azlo Web Designs -->
 		</div>
 	</div>
 
-	<script src="javascript/script.js"></script>
+	<script src="js/script.js"></script>
 	<script type="text/javascript">
 		// confirmation for the form
 		function show_alert() {

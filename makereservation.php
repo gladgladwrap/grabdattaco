@@ -296,7 +296,7 @@
 			</div>	
 		</div><!-- End of flex content -->
 	</div><!-- End of Wrapper -->
-	<script src="javascript/script.js"></script>
+	<script src="js/script.js"></script>
 	<script type="text/javascript">
 
 		document.getElementById('eventType').value = "<?php if(isset($_POST["eventType"])) { echo $eventType;} else { echo $_GET['eventType'];}

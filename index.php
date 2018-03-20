@@ -32,7 +32,7 @@ Author: Dylan Cooper -->
 			</div>
 		</div>
 	</div>
-<script src="javascript/script.js"></script>
+<script src="js/script.js"></script>
 <script type="text/javascript" id="cookiebanner"
   		src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js"
   		 data-position="top" data-font-size="1.1em" data-mask="true">

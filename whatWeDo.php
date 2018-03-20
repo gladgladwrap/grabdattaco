@@ -68,7 +68,7 @@ Company: Azlo Web Designs -->
 			</div>
 		</div>
 	</div>
-	<script src="javascript/script.js"></script>
+	<script src="js/script.js"></script>
 	<script type="text/javascript">
 
 		// Create the tooltips only when document ready

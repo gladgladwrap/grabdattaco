@@ -4,9 +4,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="jquery-3.2.1.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="build/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    
     <link rel="shortcut icon" href="iconified/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="iconified/apple-touch-icon.png" />
 	<link rel="apple-touch-icon" sizes="57x57" href="iconified/apple-touch-icon-57x57.png" />
@@ -22,24 +24,24 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 
-	<meta name="description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!" />
+	<meta name="description" content="Grabdat Taco is a taco-party catering company. We bring the tacos -- you have a great time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!" />
+
 
 	<!-- Google / Search Engine Tags -->
-
 	<meta itemprop="name" content="Grabdat Taco">
 	<meta itemprop="description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!">
 	<meta itemprop="image" content="images/metaphoto.png">
 
-	<!-- Facebook Meta Tags -->
 
+	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="http://grabdattaco.com">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Grabdat Taco">
 	<meta property="og:description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!">
 	<meta property="og:image" content="images/metaphoto.png">
 
-	<!-- Twitter Meta Tags -->
 
+	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Grabdat Taco">
 	<meta name="twitter:description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!">

@@ -53,6 +53,7 @@ Company: Azlo Web Designs -->
       </footer>
     </div>
     
-    <script src="javascript/script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

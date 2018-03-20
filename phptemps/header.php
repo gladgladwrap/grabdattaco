@@ -33,7 +33,5 @@
 	
 	        <li id="header-time">' .date("h:i a") . '</li>
 	
-	    </ul>
-
-	    <button style="position:absolute;right:0;top:2vh;" id="hideCreepyManBtn" type="button">Hide The Creepy Man</button>';
+	    </ul>'
 ?>
