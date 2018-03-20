@@ -1,5 +1,5 @@
 <?php
-	echo '<a href="#" class="toggleNav" onclick="myFunction(this)"> 
+	echo '<a href="#" class="toggleNav" onclick="toggleMobileNav(this)"> 
 		<div class="menuIcon">
 		  	<div class="bar1"></div>
 		  	<div class="bar2"></div>

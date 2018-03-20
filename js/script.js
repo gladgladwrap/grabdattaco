@@ -1,29 +1,4 @@
-// var firstName = prompt("What's your first name?", "");
-
-
-//  function displayMessage(firstName) {
-//         alert("Hey " + firstName + ", hello there!");
-//     }
-
-// displayMessage(firstName);
-
-// var happiness = prompt("Are you happy?");
-// if (happiness ==="yes")
-//     console.log("Good for you");
-
-// window.onload = function() {
-//    var time = new Date();
-//    time = time.toTimeString();
-//     getGreeting(time);
-// }
-
-// function getGreeting(time){
-//     document.getElementById("greeting").innerHTML = "Grabdat Taco</br>" + time;
-// }
-
-
-
-function myFunction(x) {
+function toggleMobileNav(x) {
 	    	x.classList.toggle("change");
 	    }
 
