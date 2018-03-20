@@ -2,3 +2,7 @@ node_modules/
 gulpfile.js
 _.htaccess
 databases/
+style.css
+package.json
+package-lock.json
+
