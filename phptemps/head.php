@@ -24,7 +24,26 @@
 
 	<meta name="description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!" />
 
+	<!-- Google / Search Engine Tags -->
+
+	<meta itemprop="name" content="Grabdat Taco">
+	<meta itemprop="description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!">
 	<meta itemprop="image" content="images/metaphoto.png">
+
+	<!-- Facebook Meta Tags -->
+
+	<meta property="og:url" content="http://grabdattaco.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Grabdat Taco">
+	<meta property="og:description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!">
+	<meta property="og:image" content="images/metaphoto.png">
+
+	<!-- Twitter Meta Tags -->
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Grabdat Taco">
+	<meta name="twitter:description" content="Grabdat Taco is a taco-party catering company. We bring the tacos; we have a good time! Grabdat Taco serves community and private events. Grabdat Taco provides Mexican food, liqueurs, and music!">
+	<meta name="twitter:image" content="images/metaphoto.png">
 
 	<meta name="author" content="Dylan Cooper" />
 
