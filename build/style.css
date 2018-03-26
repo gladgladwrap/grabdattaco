@@ -372,7 +372,6 @@ BACK BUTTON, FLEX-NAV, MAIN CONTENT, AND SITE ADS*/
 	display: -ms-flexbox;
 	display: flex;
 	font-weight: 100;
-	font-family: cursive;
 	font-size: 1.2em;
 	margin: 1em 0;
 }
@@ -390,6 +389,8 @@ BACK BUTTON, FLEX-NAV, MAIN CONTENT, AND SITE ADS*/
 	-ms-flex: 1;
 	    flex: 1;
 	margin: 0;
+	font-size: 0.75em;
+	font-weight: 100;
 }
 
 .itemDescription li {
@@ -405,23 +406,7 @@ BACK BUTTON, FLEX-NAV, MAIN CONTENT, AND SITE ADS*/
 
 /* FONT HANDLING */
 
-h1,
-h2,
-h3,
-.flex-nav li,
-#reservation-button,
-.button, 
-figcaption,
-.signup,
-input,
-textarea,  
-a,
-p,
-li,
-sup,
-.vcard,
-.error,
-#receipt {
+* {
 	font-family: 'Gloria Hallelujah', Comic Sans MS;
 }
 
@@ -745,8 +730,8 @@ footer {
 	padding: 5px 60px;
 	position: relative;
   	bottom: 0;
-  	left: calc(50% - 11.5em);
-  	background-color: #BDFFF9;
+  	left: calc(50% - 147px);
+  	/*background-color: #BDFFF9;*/
   	text-align: center;
   	width: -webkit-fit-content;
   	width: -moz-fit-content;
@@ -979,7 +964,6 @@ footer p {
 		-ms-flex-pack: center;
 		    justify-content: center;
 		text-decoration: none;
-		font-family: 'Gloria Hallelujah', cursive;
 		font-size: 1.4em;
 		color: black;
 	}
