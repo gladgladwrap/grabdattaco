@@ -1,0 +1,7 @@
+CREATE TABLE customer_feedback
+	( name CHAR(50) NOT NULL,
+	email CHAR(50) NOT NULL,
+	message text NOT NULL,
+	tstamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (tstamp)
+) ENGINE = INNODB;
